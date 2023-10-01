@@ -60,7 +60,6 @@ public class commonOps extends base {
         logger = LogManager.getLogger(commonOps.class);
         driver.manage().window().maximize();
         driver.get(getData("URL"));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
     public static WebDriver initChromeDriver() {
