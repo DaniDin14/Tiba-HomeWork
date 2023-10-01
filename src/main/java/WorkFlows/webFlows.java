@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 import org.testng.Assert;
 
 public class webFlows extends commonOps {
-    @Step("Search For A Song, Add Filters, Play It, Skip The Ad, Print The Channel And Artist Names.")
+    @Step("Search For A Song, Add Filters, Play It, Skip The Ad, Print The Channel And Artist Name")
     public static void searchSong(String songQuery,String songURL, String artistName) {
 
         try {
