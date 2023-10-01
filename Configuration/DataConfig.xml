@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration>
+    <!-- Timeout -->
+    <TimeOut>10</TimeOut>
+
+    <!-- Web -->
+    <PlatformName>Web</PlatformName>
+    <BrowserType>Chrome</BrowserType>
+    <URL>https://www.youtube.com/</URL>
+
+    <!-- Data Test -->
+    <songQuery>I Will Survive - Alien song</songQuery>
+    <songURL>/watch?v=ybXrrTX3LuI</songURL>
+    <artistName>Gloria Gaynor</artistName>
+
+</Configuration>
