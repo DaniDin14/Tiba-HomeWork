@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Selenium Java Project - YouTube Music Automation
 
 This project is designed to automate tasks on YouTube Music using Selenium with Java.
