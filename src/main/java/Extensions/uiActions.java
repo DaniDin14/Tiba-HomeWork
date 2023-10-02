@@ -67,20 +67,12 @@ public class uiActions extends commonOps {
 
     @Step("Click On Skip Ad")
     public static void skipAd() {
-        WebElement skipAdButton ;
+        WebElement skipAdButton;
 
-//        String x = driver.findElement(By.xpath("//div[@class='ytp-ad-text ytp-ad-preview-text']")).getText();
-//        logger.info(x);
         try {
             skipAdButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='ytp-ad-text ytp-ad-skip-button-text']")));
-
-/*            if (x.equals("Video will play after ad")) {
-//                wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[@class='ytp-ad-text ytp-ad-preview-text']")));
-//                logger.info("Assuming ad played, continuing with video.");
-//            }
-            else */ if (skipAdButton.isDisplayed()) {
+            if (skipAdButton.isDisplayed()) {
                     skipAdButton.click();
-                    //Assert.assertTrue(isVideoPlaying(), "Video is not playing");
                     logger.info("Skipped the ad");
             }
         } catch (TimeoutException e) {
@@ -95,11 +87,6 @@ public class uiActions extends commonOps {
         return uiActions.waitAndGetText(youtubeMainPage.artist_name);
     }
 
-//    public static boolean isVideoPlaying() {
-//        WebElement videoElement = driver.findElement(By.tagName("video"));
-//        String playbackState = (String) ((JavascriptExecutor)driver).executeScript("return arguments[0].paused;", videoElement);
-//        return !Boolean.parseBoolean(playbackState);
-//    }
     public static void closedYouTubeMusicPopup() {
         try {
             if (youtubeMainPage.btn_noThanks.isDisplayed()) {
