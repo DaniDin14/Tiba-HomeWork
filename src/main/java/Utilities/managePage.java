@@ -1,10 +1,15 @@
 package Utilities;
 
+import PageObjects.Youtube.filterPage;
+import PageObjects.Youtube.searchPage;
+import PageObjects.Youtube.videoPage;
 import org.openqa.selenium.support.PageFactory;
 
 public class managePage extends base {
 
     public static void init() {
-        youtubeMainPage = PageFactory.initElements(driver, PageObjects.Youtube.mainPage.class);
+        youtubeSearchPage = PageFactory.initElements(driver, searchPage.class);
+        youtubeFilterPage = PageFactory.initElements(driver, filterPage.class);
+        youtubeVideoPage = PageFactory.initElements(driver, videoPage.class);
     }
 }

@@ -76,7 +76,7 @@ The architecture of this Selenium Java project follows a modular and organized s
 
    Location: Located in the `PageObjects` package.
 
-   Example: `mainPage.java` contains elements and methods related to the YouTube Music main page.
+   Example: `searchPage.java` contains locators elements to the YouTube Music search page.
 
 2. **Extensions**
 

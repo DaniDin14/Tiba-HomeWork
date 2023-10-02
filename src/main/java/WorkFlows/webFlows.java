@@ -15,7 +15,7 @@ public class webFlows extends commonOps {
             uiActions.chooseVideoFromList(songURL);
             uiActions.skipAd();
             uiActions.closedYouTubeMusicPopup();
-            uiActions.waitAndClick(youtubeMainPage.btn_show_more);
+            uiActions.waitAndClick(youtubeVideoPage.btn_show_more);
             Assert.assertEquals(uiActions.getArtistName(), artistName);
             logger.info("The Artist Name Is: " + uiActions.getArtistName());
         } catch (Exception e) {

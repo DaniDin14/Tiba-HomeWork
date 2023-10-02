@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
@@ -65,7 +66,7 @@ public class commonOps extends base {
     public static WebDriver initChromeDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        //options.addArguments("--headless");
+        options.addArguments("--headless");
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--disable-notifications");
         return new ChromeDriver(options);
@@ -81,7 +82,11 @@ public class commonOps extends base {
     }
     public static WebDriver initEdgeDriver() {
         WebDriverManager.edgedriver().setup();
-        return new EdgeDriver();
+        EdgeOptions options = new EdgeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--remote-allow-origins=*");
+        options.addArguments("--disable-notifications");
+        return new EdgeDriver(options);
     }
 
     @BeforeClass
