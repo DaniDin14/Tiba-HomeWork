@@ -239,9 +239,4 @@ For any questions or feedback, please feel free to reach out:
 
 - Log4j Documentation: https://logging.apache.org/log4j/2.x/manual/index.html
 
-- Allure Documentation: https://docs.qameta.io/allure/
-
-=======
-# Tiba-HW
->>>>>>> ddc6a4d1694d0bde448417aa7be5f7e88661316c
-> sadadsasd
+- Allure Documentation: https://docs.qameta.io/allure/# Tiba-HomeWork
