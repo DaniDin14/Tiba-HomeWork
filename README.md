@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Selenium Java Project - YouTube Music Automation
 
 This project is designed to automate tasks on YouTube Music using Selenium with Java.
@@ -240,3 +241,7 @@ For any questions or feedback, please feel free to reach out:
 
 - Allure Documentation: https://docs.qameta.io/allure/
 
+=======
+# Tiba-HW
+>>>>>>> ddc6a4d1694d0bde448417aa7be5f7e88661316c
+> sadadsasd
