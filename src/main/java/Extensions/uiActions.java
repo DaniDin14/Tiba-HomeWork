@@ -54,7 +54,6 @@ public class uiActions extends commonOps {
         logger.debug("page source" + driver.getPageSource());
         List<WebElement> searchResults = youtubeMainPage.list_searchResults;
         for (WebElement result : searchResults) {
-
             WebElement videoLink = result.findElement(By.tagName("a"));
             String videoURL = videoLink.getAttribute("href");
             if (videoURL.contains(songURL)) {
