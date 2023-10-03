@@ -34,7 +34,7 @@ This project is designed to automate tasks on YouTube Music using Selenium with 
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/DaniDin14/Tiba-HW.git
+    git clone https://github.com/DaniDin14/Tiba-HomeWork
    ```
    
 2. Import the project into your preferred Java IDE.
@@ -238,4 +238,4 @@ For any questions or feedback, please feel free to reach out:
 
 - Log4j Documentation: https://logging.apache.org/log4j/2.x/manual/index.html
 
-- Allure Documentation: https://docs.qameta.io/allure/# Tiba-HomeWork
+- Allure Documentation: https://docs.qameta.io/allure/#
