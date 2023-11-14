@@ -8,7 +8,8 @@ import org.openqa.selenium.support.How;
 public class videoPage extends base {
     @FindBy(how = How.CSS, using = "tp-yt-paper-button#expand")
     public WebElement btn_show_more;
-    @FindBy(how = How.CSS, using = "ytd-text-inline-expander .ytd-video-description-music-section-renderer:nth-of-type(2) #info-row-header yt-formatted-string")
+    //@FindBy(how = How.CSS, using = "ytd-text-inline-expander .ytd-video-description-music-section-renderer:nth-of-type(2) #info-row-header yt-formatted-string")
+    @FindBy(how = How.XPATH, using = "//div[@id='description']//h4")
     public WebElement artist_name;
     @FindBy(how = How.ID, using = "dismiss-button")
     public WebElement btn_noThanks;
