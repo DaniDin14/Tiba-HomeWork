@@ -51,8 +51,9 @@ public class uiActions extends commonOps {
     }
 
     @Step("Choose Video From List")
-    public static void chooseVideoFromList(String songURL) {
+    public static void chooseVideoFromList(String songURL) /*throws InterruptedException*/ {
         logger.debug("page source" + driver.getPageSource());
+        //Thread.sleep(2000);
         List<WebElement> searchResults = youtubeSearchPage.list_searchResults;
         for (WebElement result : searchResults) {
             WebElement videoLink = result.findElement(By.tagName("a"));
